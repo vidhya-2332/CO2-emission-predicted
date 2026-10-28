@@ -77,19 +77,17 @@ CO2-Emissions-Predictor/
 ### 1. Clone the repository
 
 ```bash
-git clone <your-github-repository-url>
-cd CO2-Emissions-Predictor
+git clone https://github.com/vidhya-2332/CO2-emission-predicted.git
+cd CO2-emission-predicted
 ```
 
-Replace `<your-github-repository-url>` with your actual repository URL.
-
-### 2. Create a virtual environment
+### 2. Create and activate a virtual environment
 
 ```bash
 python -m venv venv
 ```
 
-Activate it on Windows PowerShell:
+On Windows PowerShell:
 
 ```powershell
 .\venv\Scripts\Activate.ps1
@@ -101,19 +99,15 @@ Activate it on Windows PowerShell:
 pip install -r requirements.txt
 ```
 
-### 4. Add the dataset
-
-Place `sustainability_data.csv` in the same directory as `app.py`, or upload the CSV using the dashboard's sidebar.
-
-Make sure the file includes all four required columns.
-
-### 5. Run the application
+### 4. Run the application
 
 ```bash
 streamlit run app.py
 ```
 
-Streamlit will display a local URL, usually `http://localhost:8501`. Open it in your browser to access the dashboard.
+Open the local URL shown in your terminal, usually `http://localhost:8501`.
+
+**Dataset requirement:** Place `sustainability_data.csv` beside `app.py`, or upload a CSV through the dashboard. The dataset must contain `Energy_Consumption`, `Renewable_Percentage`, `GDP`, and `CO2_Emissions`.
 
 ## 🧠 Machine Learning Workflow
 
